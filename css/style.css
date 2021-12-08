@@ -1,0 +1,1079 @@
+/* General Styles */
+
+*{
+    box-sizing : border-box;
+    -webkit-box-sizing : border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url(../fonts/Poppins-Regular.eot);
+    src: url(../fonts/Poppins-Regular.ttf) format("embedded-opentype");
+    src: url(../fonts/Poppins-Regular.woff) format("truetype");
+    src: url(../fonts/Poppins-Regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "playfair-display";
+    src: url(../fonts/PlayfairDisplay-Regular.eot);
+    src: url(../fonts/PlayfairDisplay-Regular.ttf) format("embedded-opentype");
+    src: url(../fonts/PlayfairDisplay-Regular.woff) format("truetype");
+    src: url(../fonts/PlayfairDisplay-Regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "opensans-condenced";
+    src: url(../fonts/OpenSansCondensed-Light.eot);
+    src: url(../fonts/OpenSansCondensed-Light.ttf) format("embedded-opentype");
+    src: url(../fonts/OpenSansCondensed-Light.woff) format("truetype");
+    src: url(../fonts/OpenSansCondensed-Light.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "cinzel-bold";
+    src: url(../fonts/Cinzel-ExtraBold.eot);
+    src: url(../fonts/Cinzel-ExtraBold.ttf) format("embedded-opentype");
+    src: url(../fonts/Cinzel-ExtraBold.woff) format("truetype");
+    src: url(../fonts/Cinzel-ExtraBold.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "lato";
+    src: url(../fonts/Lato-Regular.eot);
+    src: url(../fonts/Lato-Regular.ttf) format("embedded-opentype");
+    src: url(../fonts/Lato-Regular.woff) format("truetype");
+    src: url(../fonts/Lato-Regular.woff2) format("woff2");
+}
+
+body {
+    background: #fcfcfc;
+    font-family: "poppins" , "playfair-display" , "opensans-condenced";
+    font-size: 62.5%;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* Header */
+
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-color: #091C2A;
+    position: relative;
+}
+
+.header-overlay{
+    background-image: url(../img/Rectangle1.png);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.top-header{
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    padding: 3rem 0;
+    justify-content: flex-end;
+}
+
+.th-right{
+    flex: 1;
+    text-align: right;
+}
+
+.th-left{
+    flex: 1;
+    text-align: left;
+}
+
+.th-name{
+    color: #e7e7e7;
+    font-family: "opensans-condenced";
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.th-family{
+    color: #41B5BC;
+    font-family: "opensans-condenced";
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    letter-spacing: 0.5rem;
+}
+
+.th-right i{
+    color :#67E0E1;
+    font-size: 2.5rem;
+    cursor: pointer;
+    position: fixed;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #212121;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10rem;
+    text-align: center;
+}
+  
+.sidenav a {
+    padding: .8rem 0;
+    font-size: 2.5rem;
+    color: #fff;
+    font-family: "playfair-display";
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #67E0E1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 2.5rem;
+    font-size: 3.5rem;
+    margin-left: 5rem;
+}
+
+.bottom-header{
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    position: absolute;
+}
+
+.bh-box{
+    position: relative;
+    text-align: center;
+    width: fit-content;
+}
+
+.bh-name{
+    font-family: "playfair-display";
+    font-size: 3rem;
+    color: #fff;
+    position: absolute;
+    left: 4rem;
+    top: -.2rem;
+}
+
+.bh-family{
+    font-family: "playfair-display";
+    font-size: 7rem;
+    background: url(../img/richard-img2.jpg) no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-position-y: center;
+}
+
+.bh-info{
+    font-family: "poppins";
+    color: #67E0E1;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    letter-spacing: 0.2rem;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* First Section : About Me */
+
+
+.section1{
+    width: 100%;
+    background-color: #091C2A;
+    height: auto;
+}
+
+.container1{
+    width: 65%;
+    margin: 0 auto;
+    padding: 6rem 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.s1-left{
+    width: 33%;
+    text-align: right;
+}
+
+.tabcontent{
+    width: 55%;
+    text-align: left;
+    padding-top: 3rem;
+    display: none;
+}
+
+.num-01{
+    font-family: "cinzel-bold";
+    font-size: 22rem;
+    font-weight: 900;
+    line-height: 20rem;
+    color: transparent;
+    background: url(../img/richard-img3.png) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.num01-list{
+    text-align: right;
+    margin-top: 2rem;
+    overflow: hidden;
+    letter-spacing: .2rem;
+}
+
+.tabcontent {
+    animation: fadeEffect 1s;
+}
+  
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.tablinks{
+    font-family: "poppins";
+    font-size: 1.2rem;
+    color: #fff;
+    letter-spacing: 0.14rem;
+    padding: 0.7rem 0;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color ease-in-out 200ms;
+}
+.tablinks.active{
+    color: #67E0E1;
+}
+
+.tablinks:hover{
+    color: #67E0E1;
+}
+
+.num-title {
+    font-family: "poppins";
+    font-size: 1.2rem;
+    color: #67E0E1;
+    letter-spacing: 0.2rem;
+}
+
+.num-subtitle{
+    font-family: "playfair-display";
+    font-size: 4rem;
+    letter-spacing: 0.6rem;
+    color: #fff;
+}
+
+.spliter{
+    width: 100%;
+    height: 0.02rem;
+    border: none;
+    background-color: #fff;
+    margin-top: 2rem !important;
+}
+
+.spliter-box{
+    width: 6rem;
+    height: 0.5rem;
+    background-color: #67E0E1;
+    margin-bottom: 2rem;
+}
+
+.num01-text{
+    color: #fff;
+    font-family: "lato";
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    letter-spacing: .2rem;
+}
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* Second Section : Latest Works */
+
+
+.section2{
+    width: 100%;
+    height: auto;
+    background-color: #091C2A;
+    opacity: 95%;
+}
+
+.container2-1{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 7rem;
+    display: flex;
+    flex-flow: wrap-reverse;
+    justify-content: space-between;
+}
+
+.s2-left{
+    width: 55%;
+    text-align: right;
+    padding-top: 5rem;
+}
+
+.s2-right{
+    width: 35%;
+    text-align: left;
+}
+
+.container2-2{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    padding: 3rem 0;
+}
+
+.s2-works{
+    width: 30%;
+    text-align: center;
+}
+
+.container2-3{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5rem 0 7rem;
+}
+
+
+.s2-left .spliter-box{
+    float: right;
+}
+
+.num-02{
+    font-family: "cinzel-bold";
+    font-size: 22rem;
+    font-weight: 900;
+    line-height: 20rem;
+    color: transparent;
+    background: url(../img/richard-img4.jpg) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.works-img{
+    width: 80%;
+}
+
+.works-title{
+    color: #67E0E1;
+    font-size: 1.1rem;
+    font-family: "poppins";
+    margin-top: 2rem;
+    letter-spacing: .1rem;
+}
+
+.works-name{
+    color: #fff;
+    font-size: 2.2rem;
+    font-family: "playfair-display";
+    margin-top: 2rem;
+    transition: 200ms;
+    display: inline-block;
+    letter-spacing: .3rem;
+}
+
+.works-name:hover {
+    color: #67E0E1;
+}
+
+.works-spliter{
+    width: 70%;
+    height: 0.02rem;
+    margin: 2rem auto;
+    border: none;
+    background-color: #fff;
+    margin-top: 4rem;
+}
+
+.works-by{
+    color: #fff;
+    font-family: "poppins";
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+}
+
+.works-button{
+    font-size: 1.7rem;
+    font-family: "poppins";
+    color: #fff;
+    background-color: #091C2A;
+    border: 0.1rem #67E0E1 solid;
+    box-shadow: #67E0E1 0.3rem 0.3rem 0 0;
+    padding: 0.8rem 3.5rem;
+    transition: background ease-in-out 300ms;
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+
+.works-button:hover{
+    box-shadow: 0 0 0 0;
+    color: #000;
+    background-color: #67E0E1;
+}
+
+
+
+
+/* --------------------------------------------------------------------------------------------------- */
+/* Third Section : Testimonals */
+
+
+.section3{
+    width: 100%;
+    height: auto;
+    background-color: #091C2A;
+}
+
+.container3-1{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    padding: 7rem 0;
+}
+
+.s3-left{
+    width: 35%;
+    text-align: right;
+}
+
+.s3-right{
+    width: 55%;
+    text-align: left;
+    margin-right: 2rem;
+    padding-top: 3rem;
+}
+
+.container3-2{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 7rem;
+    margin-top: 3rem;
+}
+
+.info-boxes{
+    width: 22%;
+    text-align: center;
+    border: .1rem solid #fff;
+}
+
+.num-03{
+    font-family: "cinzel-bold";
+    font-size: 22rem;
+    font-weight: 900;
+    line-height: 20rem;
+    color: transparent;
+    background: url(../img/richard-img9.jpg) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.t-person{
+    width: 60%;
+    float: left;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.t-left{
+    width: 60%;
+    text-align: right;
+}
+
+.t-right{
+    width: 40%;
+    text-align: left;
+}
+
+.t-left h5{
+    color: #67E0E1;
+    font-size: 1.2rem;
+    font-family: "poppins";
+    margin: .5rem .8rem .5rem 0;
+    letter-spacing: .1rem;
+}
+
+.t-left h6{
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: "poppins";
+    margin: .2rem .8rem 0 0;
+    letter-spacing: .1rem;
+
+}
+
+.t-right img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+.t-nav{
+    width: 40%;
+    float: right;
+    text-align: center;
+}
+
+.t-nav i{
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 900;
+    padding: 2rem 1rem;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+.prev:hover, .next:hover {
+    color: #67E0E1;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+  
+  @-webkit-keyframes fade {
+    from {opacity: .1} 
+    to {opacity: 1}
+}
+  
+  @keyframes fade {
+    from {opacity: .1} 
+    to {opacity: 1}
+}
+
+.info-boxes h2{
+    font-family: "playfair-display";
+    font-size: 2.8rem;
+    margin: 1.7rem 0 1.5rem;
+    color: #fff;
+}
+
+.info-boxes hr{
+    width: .3rem;
+    height: 3.5rem;
+    border: none;
+    background-color: #67E0E1;
+    margin: 2.5rem auto;
+}
+
+.info-boxes .fa{
+    color: #67E0E1;
+    font-size: 5rem;
+    margin: 1rem 0 1.5rem;
+    font-weight: 400;
+}
+
+.info-boxes h1{
+    font-family: "poppins";
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    letter-spacing: .2rem;
+    line-height: 2.5rem;
+}
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* Section 4 : My Blog */
+
+
+.section4{
+    width: 100%;
+    height: auto;
+    background-color: #091C2A;
+    opacity: 95%;
+}
+
+.container4-1{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 7rem;
+    display: flex;
+    flex-flow: wrap-reverse;
+    justify-content: space-between;
+}
+
+.s4-left{
+    width: 55%;
+    text-align: right;
+    padding-top: 3rem;
+}
+
+.s4-right{
+    width: 38%;
+    text-align: left;
+}
+
+.num-04{
+    font-family: "cinzel-bold";
+    font-size: 22rem;
+    font-weight: 900;
+    line-height: 20rem;
+    color: transparent;
+    background: url(../img/richard-img2.jpg) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.s4-left .spliter-box{
+    float: right;
+}
+
+.container4-2{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding-bottom: 7rem;
+}
+
+.blog-posts{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.blog-img{
+    width: 35%;
+    text-align: right;
+}
+
+.blog-text{
+    width: 60%;
+}
+
+.blog-img img{
+    width: 80%;
+}
+
+.blog-text p{
+    font-family: "playfair-display";
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #fff;
+    margin-left: 3rem;
+    letter-spacing: .2rem;
+    transition: color ease-in-out 200ms;
+}
+
+.blog-text p:hover{
+    color: #67E0E1;
+}
+
+.blog-post-info{
+    text-align: left;
+    margin-left: 3rem;
+    margin-top: 1.3rem;
+}
+
+.blog-post-info i{
+    font-size: 1.2rem;
+    color: #686868;
+    margin-right: .5rem;
+}
+
+.blog-post-info span{
+    font-family: "poppins";
+    font-size: 1rem;
+    margin-right: 2rem;
+    color: #f1f1f1;
+    transition: color ease-in-out 200ms;
+}
+
+.blog-post-info span:hover{
+    color: #67E0E1;
+}
+
+.posts-nav{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.posts-nav i{
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 900;
+    padding: 2rem 1rem 0;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+/* Footer */
+
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #091C2A;
+}
+
+.container5{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.s5-title{
+    font-family: "poppins";
+    font-size: 1.3rem;
+    color: #67E0E1;
+    letter-spacing: 0.15rem;
+}
+
+.s5-subtitle{
+    font-family: "playfair-display";
+    font-size: 4.5rem;
+    letter-spacing: 0.2rem;
+    color: #fff;
+}
+
+footer .spliter{
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer .spliter-box{
+    margin: 0 auto;
+}
+
+footer form{
+    margin: 5rem 0;
+    width: 100%;
+    position: relative;
+}
+
+footer input[type=email]{
+    background-color: transparent;
+    color: #fff;
+    width: 100%;
+    font-family: "lato";
+    font-size: 1.4rem;
+    padding-bottom: .5rem;
+    border-bottom: .1rem solid #fff;
+}
+
+footer input[type=email]:focus{
+    outline: none;
+}
+
+footer input[type=submit]{
+    color: #67E0E1;
+    background-color: transparent;
+    font-family: "poppins";
+    font-size: 1.4rem;
+    position: absolute;
+    right: 0rem;
+    cursor: pointer;
+    transition: color ease-in-out 200ms;
+}
+
+footer .form-button:hover{
+    color: #fff;
+}
+
+.social-accounts{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+footer a{
+    font-family: "poppins";
+    color: #fff;
+    background-color: #091C2A;
+    border: 0.1rem #67E0E1 solid;
+    box-shadow: #67E0E1 0.3rem 0.3rem 0 0;
+    transition: background ease-in-out 350ms;
+}
+
+footer a:hover{
+    box-shadow: 0 0 0 0;
+    color: #000;
+    background-color: #67E0E1;
+}
+
+footer a .fa{
+    font-size: 4rem;
+    padding: 2.5rem;
+}
+
+footer p i{
+    color: #fff;
+    font-size: 1rem;
+}
+
+footer p{
+    font-family: "lato";
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
+    color: #e7e7e7;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* Responisive Settings */
+
+
+@media (max-width: 575.98px) {
+    [class*="container"] {
+        width: 98% !important;
+        padding-top: 0rem !important;
+    }
+    header .container{
+        padding-top: 2rem !important;
+    }
+    .top-header .container{
+        justify-content: space-between !important;
+    }
+    .th-right i{
+        right: 1rem !important;
+    }
+    .th-name,.th-family{
+        font-size: 1.5rem !important;
+        letter-spacing: .2rem !important;
+        margin-left: 1rem !important;
+    }
+    .bh-name{
+        font-size: 1.5rem !important;
+        top: 0 !important;
+    }
+    .bh-family{
+        font-size: 5rem !important;
+    }
+    .bh-info{
+        font-size: 1rem !important;
+        margin-top: 2rem !important;
+    }
+    .s1-left, .s2-right, .s3-left, .s4-right{
+        width: 39% !important;
+    }
+    .s1-left h1, .s2-right h1, .s3-left h1, .s4-right h1{
+        font-size: 18rem !important;
+    }
+    .tabcontent h1, .s2-left h1, .s3-right h1, .s4-left h1, .s5-subtitle{
+        font-size: 3rem !important;
+    }
+    .tabcontent p, .s2-left p, .s3-right p, .s4-left p{
+        font-size: 1rem !important;
+    }
+
+    .s1-left, .s2-right, .s3-left, .s4-right, .num01-list,
+    .tabcontent, .s2-left, .s3-right, .s4-left{
+        width: 100% !important;
+        text-align: center !important;
+    }
+    .s2-works , .info-boxes{
+        width: 45% !important;
+        margin-top: 2rem !important;
+    }
+    footer a .fa{
+        font-size: 2rem !important;
+    }
+    .container{
+        display: flex !important;
+        justify-content: space-around !important;
+    }
+    .container5{
+        padding-top: 3rem !important;
+    }
+    .th-left, .th-right{
+        flex: none !important;
+    }
+    .social-accounts a{
+        margin-top: 2rem !important;
+    }
+    .blog-posts{
+        justify-content: center !important;
+    }
+    .blog-img,.blog-text{
+        width: 80% !important;
+    }
+    .blog-img{
+        text-align: center !important;
+        margin-bottom: 2rem;
+    }
+}
+    
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    [class*="container"] {
+        width: 98% !important;
+        padding-top: 3rem !important;
+    }
+    .th-right i{
+        right: 1rem !important;
+    }
+
+    .s1-left, .s2-right, .s3-left, .s4-right{
+        width: 39% !important;
+    }
+    .s1-left h1, .s2-right h1, .s3-left h1, .s4-right h1{
+        font-size: 18rem !important;
+    }
+    .tabcontent h1, .s2-left h1, .s3-right h1, .s4-left h1, .s5-subtitle{
+        font-size: 3rem !important;
+    }
+    .tabcontent p, .s2-left p, .s3-right p, .s4-left p{
+        font-size: 1rem !important;
+    }
+
+    .s1-left, .s2-right, .s3-left, .s4-right, .num01-list,
+    .tabcontent, .s2-left, .s3-right, .s4-left{
+        width: 100% !important;
+        text-align: center !important;
+    }
+    .s2-works , .info-boxes{
+        width: 45% !important;
+        margin-top: 2rem !important;
+    }
+    footer a .fa{
+        font-size: 3rem !important;
+    }
+    .container{
+        display: flex !important;
+        justify-content: space-around !important;
+    }
+    .th-left, .th-right{
+        flex: none !important;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    [class*="container"] {
+        width: 98% !important;
+        padding-top: 3rem !important;
+    }
+    header .container{
+        width: 90% !important;
+    }
+    .th-right i{
+        right: 1rem !important;
+    }
+    .s1-left, .s2-right, .s3-left, .s4-right{
+        width: 39% !important;
+    }
+    .s1-left h1, .s2-right h1, .s3-left h1, .s4-right h1{
+        font-size: 18rem !important;
+    }
+    .tabcontent h1, .s2-left h1, .s3-right h1, .s4-left h1, .s5-subtitle{
+        font-size: 3rem !important;
+    }
+    .tabcontent p, .s2-left p, .s3-right p, .s4-left p{
+        font-size: 1rem !important;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    [class*="container"] {
+        width: 98% !important;
+        padding-top: 4rem !important;
+    }
+    header .container{
+        width: 90% !important;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    /* [class*="container"] {
+        width: 90% !important;
+    } */
+}
