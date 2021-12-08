@@ -8,4 +8,4 @@ Includes these functions :
 1. Side Menu
 2. Clickable about-me sections
 3. Testimonials slider
-4. Blog post review slider
+4. Blog post preview slider
